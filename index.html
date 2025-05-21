@@ -1,17 +1,41 @@
 <html>
   <title>Momin Aftab</title>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=error" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="navbar">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="#"><span class="material-icons">home</span></a>
+      <a href="#"><span class="material-icons">info</span></a>
+      <a href="#"><span class="material-icons">folder</span></a>
+      <a href="#"><span class="material-icons">mail</span></a>
     </div>
 
     <h1>Welcome.</h1>
+    <script src="scripts.js"></script>
+
   </body>
+<div class="bug-button" onclick="toggleBugForm()" id="bugButton">
+ <span class="material-symbols-outlined">
+error
+</span>
+</div>
+
+
+<!-- Hidden Bug Report Form -->
+<div class="bug-form-container" id="bugForm">
+  <h3>Report an issue</h3>
+  <form class="bug-form" onsubmit="submitBug(event)">
+    <input type="text" name="name" placeholder="Name" required />
+    <textarea name="bug" placeholder="Issue Details" required></textarea>
+    <button class="bug-button" role="button">Submit</button>
+  </form>
+</div>
 </html>
 </html>
+
