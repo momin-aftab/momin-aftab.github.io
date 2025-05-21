@@ -1,4 +1,21 @@
 body
 {
-  background-colour: #fff8e1;
+  background-colour: #ada99c;
+}
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 0.5em 1em;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #575757;
 }
